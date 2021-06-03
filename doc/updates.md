@@ -15,11 +15,11 @@ For our purposes, I distinguish three firmware file formats:
    compression/packing format that is an enormous pain in the ass to reverse
    engineer.
 
-3. The binary files used with Nikon service software. Don't ask how I know
-   of their existence. They seem to have a simpler format - just the binary
-   data, starting at 0x10000 or possibly 0x20000. There's a good chance that
-   this is the format that the scanner expects. We need to run an LS-40 USB
-   traffic dump in order to confirm this theory.
+3. The binary files used with Nikon service software. They seem to have
+   a simpler format - just the binary data, starting at 0x10000 or possibly
+   0x20000. There's a good chance that this is the format that the scanner
+   expects. We need to run an LS-40 USB traffic dump in order to confirm
+   this theory.
 
 A good clue that your firmware update file is correct is a scanner model
 string (e.g. `DF17811`) located at offset 0x11.
@@ -28,6 +28,22 @@ string (e.g. `DF17811`) located at offset 0x11.
 
 NOTE: This section is pure speculation. I will edit this as I gain more
 information.
+
+1. Send `WRITE BUFFER` command with `MODE=5`, `BUFFER_ID=7`.
+   The offset and payload should be... I'm not sure what, that's TBD.
+2. The scanner verifies the validity of update (correct model string),
+   deinitializes all peripherals and jumps to Recovery.
+3. Recovery recognizes this and jumps straight to handling that SCSI
+   command again.
+4. The markers at `0x4000` are set to indicate firmware is not valid.
+5. The firmware update file is received in chunks and flashed starting
+   at offset `0x20000`.
+6. The markers at `0x4000` are set to indicate firmware is valid
+   but Recovery is not valid.
+7. When the main firmware starts, it realizes that Recovery is missing
+   and writes a copy of Recovery from the end of the Main firmware into
+   sector `0x10000`.
+8. The markers at `0x4000` are set to indicate recovery is valid.
 
 ## Firmware update protocol
 
