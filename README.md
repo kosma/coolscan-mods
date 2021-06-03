@@ -1,6 +1,7 @@
 # Nikon Coolscan modification project
 
-Ever wished your cheap Coolscan could batch-scan like an expensive one?
+Project status: under development. No end-user content here yet -
+only technical information.
 
 # Technical documentation
 
