@@ -47,11 +47,19 @@ information.
 
 ## Firmware update protocol
 
-Firmware updates are handled through SCSI `WRITE BUFFER` command. Exact values
-for the `MODE`/`BUFFER_ID` are to be determined based on disassembly and/or
-LS-40 USB traffic dumps. Theoretically I can determine the IDs and protocol
-experimentally but it's a potentially huge pain in case something goes wrong
-and I have to desolder and reprogram the FLASH chip to recover from it.
+Firmware updates are handled through SCSI `WRITE BUFFER` command. The sequence
+performed by the original Nikon updater is:
+
+1. Issue `IDENTIFY` to confirm eligible scanner model.
+2. Issue `RESERVE UNIT`.
+3. Issue `SEND DIAGNOSTICS.`
+4. Issue `WRITE BUFFER` with `MODE=5`, send 4096 bytes of `FIRMDATA`.
+5. Continue 4) until you're out of data.
+6. Issue `SET PARAMETERS` (0xE0).
+7. Issue `EXECUTE`. Wait for it to complete.
+8. Issue `RELEASE UNIT`.
+
+The exact flow of an LS-40 update can be found [here](update_ls_40.md).
 
 ## Reinstalling the same version
 

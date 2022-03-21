@@ -28,8 +28,8 @@ different communication controllers (LS-4000), etc.
 | 0x200000 | 0x3fffff | ASIC?                    | 0x488       |
 | 0x400000 | 0x5fffff | RAM                      | 0x20000     |
 | 0x600000 | 0x7fffff | USB Controller (ISP1581) | 0x100       |
-| 0x800000 | 0x83ffff | ASIC-connected RAM       | 0x40000     |
-| 0xc00000 | 0xc0ffff | ASIC-connected RAM       | 0x10000     |
+| 0x800000 | 0x83ffff | ASIC-connected RAM (DSL) | 0x40000     |
+| 0xc00000 | 0xc0ffff | ASIC-connected RAM (BUF) | 0x10000     |
 | 0xfffd10 | 0xffff0f | Internal RAM             | 0x200       |
 | 0xffff1c | 0xffffff | Peripheral Registers     | 0xe4        |
 
@@ -74,3 +74,10 @@ The "Adapter ID" column refers to the adapter as seen by firmware.
 | IA-20                     | 1   | 1   | 0   | 1   | 2          |
 | "Not defined"             | 1   | 1   | 1   | 0   | 1          |
 | MA-21                     | 1   | 1   | 1   | 1   | 0          |
+
+## "For inspection purposes"
+
+There is code that suggests that it's possible to enter recovery mode
+by inserting an adapter with the ID of 7 (all ID lines pulled low).
+Such an adapter probably doesn't exist "in the wild" but can be
+fabricated by e.g. modifying an SA-30.
