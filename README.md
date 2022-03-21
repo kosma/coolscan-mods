@@ -10,6 +10,7 @@ only technical information.
 * [Communication protocol](doc/protocol.md)
 * [Firmware updates](doc/updates.md)
 * [Datasheets](datasheets/)
+* [Firmware dumps](dumps/)
 
 ## Acknowledgements
 
