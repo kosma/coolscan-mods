@@ -14,8 +14,7 @@ Remove the checks - and suddenly the scanner accepts the SA-30 happily. It knows
 what it is, it knows how it works - it even knows its name if you delve into the
 strings section of the firmware.
 
-For posterity, the relevant checks to patch out are (offsets are from the start
-of the FLASH, not from the start of the update file - for that, subtract 0x10000):
+For posterity, the relevant checks to patch out are:
 
 LS-50 1.02:
 
@@ -26,3 +25,6 @@ LS-40 1.20:
 
 * `0x29EB9` - replace 0x05 with 0x42 to restore support for SA-30
 * `0x29EBF` - replace 0x06 with 0x42 to restore support for SF-210
+
+Offsets are from the start of the FLASH, not from the start of the update file -
+for that, subtract 0x10000.
