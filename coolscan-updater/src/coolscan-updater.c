@@ -1,12 +1,21 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <conio.h>
 
 #include "coolscan_command.h"
 #include "coolscan_transport.h"
 #include "coolscan_updatefile.h"
 
+void press_any_key_to_continue(void)
+{
+    printf("Press any key to continue...\n");
+    _getch();
+}
+
 int main()
 {
+    atexit(press_any_key_to_continue);
+
     printf("******************************************\n");
     printf("* Nikon Coolscan Updater by Kosma Moczek *\n");
     printf("******************************************\n");
@@ -50,13 +59,14 @@ int main()
     }
 
     // execute firmware update
+    printf("Installing firmware...\n");
     coolscan_command_firmware_update_set(scanner);
     coolscan_command_firmware_update_execute(scanner);
 
     // wait for scanner to come back online
     int time = 0;
     while (true) {
-        printf("Waiting for the update to install (%ds)...\n", ++time);
+        printf("Waiting for the scanner to boot (%ds)...\n", ++time);
         if (coolscan_command_test_unit_ready(scanner))
             break;
         else
@@ -67,8 +77,6 @@ int main()
     printf("...scanner says it's a %s\n", coolscan_command_inquiry(scanner));
 
     printf("Firmware update done.\n");
-
-end:
     coolscan_scanner_close(scanner);
 
     return 0;

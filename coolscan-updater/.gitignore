@@ -131,4 +131,5 @@ fabric.properties
 
 # local
 .idea/
+*.bin
 *.bak
