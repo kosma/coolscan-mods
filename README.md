@@ -9,6 +9,7 @@ only technical information.
 * [Firmware overview](doc/firmware.md)
 * [Communication protocol](doc/protocol.md)
 * [Firmware updates](doc/updates.md)
+* [Service Manuals](manuals/)
 * [Datasheets](datasheets/)
 * [Firmware dumps](dumps/)
 
