@@ -2,7 +2,9 @@
 
 This project aims to extend old and unsupported Nikon Coolscan scanners.
 Currently it allows owners of those scanners to unlock the ability to scan
-full film rolls (using SA-30) and batch scan slides (using SF-210).
+full film rolls (using SA-30) and batch scan slides (using SF-210) on
+Nikon Coolscan LS-40 and LS-50 (known as Coolscan IV and Coolscan V in
+some markets).
 
 Why? Because Nikon artificially crippled the LS-40 and LS-50 by removing
 the ability to batch-scan, for no reason other than corporate greed and
