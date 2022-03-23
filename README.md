@@ -17,7 +17,7 @@ and enjoy the full power of these scanners.
 
 ## Instructions
 
-1. Download the latest firmware package from the [Releases](releases/) section and unpack it.
+1. Download the latest firmware package from the [Releases](https://github.com/kosma/coolscan-mods/releases) section and unpack it.
 2. Connect your LS-40 or LS-50 over USB. Turn on the scanner.
 3. Double-click `coolscan-updater.exe` and wait for the process to complete.
    As with all firmware updates, do NOT interrupt it until it says it's done.
