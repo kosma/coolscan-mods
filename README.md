@@ -5,6 +5,9 @@ only technical information.
 
 ## Technical documentation
 
+This information is only relevant for people working on scanners - be it modders
+or repairmen. It is of not much use to general public.
+
 * [Hardware overview](doc/hardware.md)
 * [Firmware overview](doc/firmware.md)
 * [Communication protocol](doc/protocol.md)
@@ -12,6 +15,7 @@ only technical information.
 * [Service Manuals](manuals/)
 * [Datasheets](datasheets/)
 * [Firmware dumps](dumps/)
+* [Firmware reflashers](reflashers/)
 
 ## Acknowledgements
 
