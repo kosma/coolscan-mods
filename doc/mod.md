@@ -18,13 +18,15 @@ For posterity, the relevant checks to patch out are:
 
 LS-50 1.02:
 
+* `0x2A213` - replace 0x03 with 0x42 to restore support for SF-210
 * `0x2A219` - replace 0x05 with 0x42 to restore support for SA-30
-* `0x2A21F` - replace 0x06 with 0x42 to restore support for SF-210
+* `0x2A21F` - replace 0x06 with 0x42 to restore support for ????
 
 LS-40 1.20:
 
+* `0x29EB3` - replace 0x03 with 0x42 to restore support for SF-210
 * `0x29EB9` - replace 0x05 with 0x42 to restore support for SA-30
-* `0x29EBF` - replace 0x06 with 0x42 to restore support for SF-210
+* `0x29EBF` - replace 0x06 with 0x42 to restore support for ????
 
 Offsets are from the start of the FLASH, not from the start of the update file -
 for that, subtract 0x10000.
