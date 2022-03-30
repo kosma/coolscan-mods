@@ -15,6 +15,19 @@ placate the finance and marketing.
 Now, twenty years later, we can finally lift those artificial limitations
 and enjoy the full power of these scanners.
 
+## Requirements
+
+* At the moment, this firmware is only available for LS-40 and LS-50.
+* You need a 64-bit system to run the firmware updater.
+* You need Vuescan drivers for the updater to work. I have not tested them
+  on any other drivers. It *might* work with Nikon drivers.
+* You must not have any other scanners connected during the update process.
+* You must not have any scanning software running during the update process.
+* For scanning entire rolls of film you need a hole cut in the back of
+  the scanner. Trying to load an entire roll without the hole cut will
+  cause physical damage to the film and/or scanner. The hole is not needed
+  for bulk slide scanning with SF-200/SF-210.
+
 ## Instructions
 
 1. Download the latest firmware package from the [Releases](https://github.com/kosma/coolscan-mods/releases) section and unpack it.
@@ -50,6 +63,9 @@ strips of film (longer than six frames, and up to 40 frames):
    many places on the internet, e.g. [Gleb's website](http://www.shtengel.com/gleb/converting_nikon_sa21_to_sa30.htm).
    It involves nothing more than installing/soldering one jumper.
 
+**Warning:** At the moment the SA-30 support on LS-40 is somewhat broken -
+the adapter is correctly identified but you can't scan more than six frames.
+
 In the future I will also offer 3D-printable designs for the film door and
 front and rear takeup spools - but those projects are still in development.
 In the meantime, consider the absolutely stunning [full roll conversion kit](https://www.etsy.com/pl/listing/949217792/nikon-4000ed-and-5000ed-full-roll)
@@ -64,7 +80,8 @@ There are a few risks involved with installing and using modified firmware:
    by simply restarting the update procedure - but in rare cases it might be
    required to desolder the FLASH chip from the mainboard and reprogram it in
    an external programmer (e.g. TL866II). Such services are commonly offered
-   by respectable electronics repair shops for a modest fee.
+   by respectable electronics repair shops for a modest fee. Full firmware
+   dumps are provided for this purpose in the [dumps](dumps/) directory.
 
 2. Using the unsupported LS-30 and SF-210 adapters might cause some components
    to wear out faster. I have not identified any potential components that are
