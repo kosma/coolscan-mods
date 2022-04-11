@@ -1,9 +1,17 @@
 # Nikon Coolscan modification project
 
-|           | **SA-30** | **SF-200** | **SF-210** |
-|-----------|-----------|------------|------------|
-| **LS-40** |     ❌     |      ✅     |      ✅     |
-| **LS-50** |     ✅     |      ✅     |      ✅     |
+## Adapter compatibility chart
+
+|           | **SA-30**  | **SF-200**  | **SF-210**  |
+|-----------|------------|-------------|-------------|
+| **LS-40** |     ❌\*   |      ✅     |      ✅     |
+| **LS-50** |     ✅\*\* |      ✅     |      ✅     |
+
+\* Not currently working, requires investigation.
+
+\*\* Requires cutting a hole in the back - see [attached stencil](hole/).
+
+## Background
 
 This project aims to extend old and unsupported Nikon Coolscan scanners.
 Currently it allows owners of those scanners to unlock the ability to scan
