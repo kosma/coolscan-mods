@@ -5,11 +5,9 @@
 |           | **SA-30**  | **SF-200**  | **SF-210**  |
 |-----------|------------|-------------|-------------|
 | **LS-40** |     ❌\*   |      ✅     |      ✅     |
-| **LS-50** |     ✅\*\* |      ✅     |      ✅     |
+| **LS-50** |     ❌\*   |      ✅     |      ✅     |
 
 \* Not currently working, requires investigation.
-
-\*\* Requires cutting a hole in the back - see [attached stencil](hole/).
 
 ## Background
 
