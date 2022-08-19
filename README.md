@@ -113,6 +113,7 @@ or repairmen. It is of not much use to general public.
 
 * [Technical information about the mod](doc/mod.md)
 * [Hardware overview](doc/hardware.md)
+* [SA-21/SA-30 pinout](doc/sa-21-30.md)
 * [Firmware overview](doc/firmware.md)
 * [Communication protocol](doc/protocol.md)
 * [Firmware updates](doc/updates.md)
