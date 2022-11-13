@@ -104,3 +104,22 @@ void coolscan_command_firmware_update_execute(coolscan_connection scanner)
     };
     coolscan_scanner_exchange(scanner, &cmd, NULL, NULL, NULL);
 }
+
+void coolscan_command_read_buffer(coolscan_connection scanner, uint8_t mode, uint8_t buffer_id, uint32_t address, struct coolscan_buffer *buffer)
+{
+    struct coolscan_buffer cmd = {
+            10, (uint8_t []){
+                    0x3C, // READ BUFFER
+                    mode,
+                    buffer_id,
+                    (address >> 16) & 0xFF,
+                    (address >>  8) & 0xFF,
+                    (address >>  0) & 0xFF,
+                    (buffer->length >> 16) & 0xFF,
+                    (buffer->length >>  8) & 0xFF,
+                    (buffer->length >>  0) & 0xFF,
+                    0x00, // Control
+            },
+    };
+    coolscan_scanner_exchange(scanner, &cmd, NULL, buffer, NULL);
+}

@@ -15,4 +15,6 @@ struct coolscan_buffer
 
 void coolscan_buffer_dump(const char *label, const struct coolscan_buffer *buffer);
 
+void coolscan_buffer_dump_long(const char *label, const struct coolscan_buffer *buffer);
+
 #endif // COOLSCAN_UPDATER_COOLSCAN_BUFFER_H
