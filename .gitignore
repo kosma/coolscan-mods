@@ -1,2 +1,3 @@
 *.bin.bak
 .DS_Store
+.*.swp
