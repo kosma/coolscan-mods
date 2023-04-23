@@ -9,3 +9,15 @@ To build, use CLion - or CMake with a MinGW toolchain if you're an expert.
 
 There are no user-friendly files here - instead, look in the Releases section
 of this repository for a user-friendly package.
+
+## Building 32-bit binaries
+
+To build 32-bit binaries for use with older systems, install MSYS2 and run
+the following under MINGW32 shell:
+
+```bash
+pacman -S mingw-w64-i686-gcc mingw-w64-i686-ninja
+```
+
+Afterwards, select the MINGW32 toolchain in CLion settings (Toolchain and CMake
+sections).
