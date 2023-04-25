@@ -72,7 +72,7 @@ The "Adapter ID" column refers to the adapter as seen by firmware.
 | SA-21                     | 1   | 0   | 1   | 1   | 4          |
 | SF-210                    | 1   | 1   | 0   | 0   | 3          |
 | IA-20                     | 1   | 1   | 0   | 1   | 2          |
-| "Not defined"             | 1   | 1   | 1   | 0   | 1          |
+| SA-20                     | 1   | 1   | 1   | 0   | 1          |
 | MA-21                     | 1   | 1   | 1   | 1   | 0          |
 
 ## "For inspection purposes"
