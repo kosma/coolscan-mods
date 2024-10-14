@@ -21,6 +21,9 @@ LS-50 1.02:
 * `0x2A213` - replace 0x03 with 0x42 to restore support for SF-210
 * `0x2A219` - replace 0x05 with 0x42 to restore support for SA-30
 * `0x2A21F` - replace 0x06 with 0x42 to restore support for ????
+* `0x2EFA2` - replace 0xFFE6 (register for AN7 result) with 0xFFE0 (Register for AN4 result)
+* `0x31C44` - replace 0xFFE6 (register for AN7 result) with 0xFFE0 (Register for AN4 result)
+* `0x33080` - replace 0xFFE6 (register for AN7 result) with 0xFFE0 (Register for AN4 result)
 
 LS-40 1.20:
 

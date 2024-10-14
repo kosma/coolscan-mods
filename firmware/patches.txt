@@ -8,6 +8,9 @@ DF17811 0x2A21F 0x06 0x42                     # Enable adapter ID 6
 DF17811 0x49E49 "1.02" "2.02"                 # Version in strings
 DF17811 0x4A114 0x00400000 0x00000000         # READ BUFFER - allowed RAM start
 DF17811 0x4A118 0x0041FFFF 0x00FFFFFF         # READ BUFFER - allowed RAM end
+DF17811 0x2EFA2 0x6B01FFE6 0x6B01FFE0         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
+DF17811 0x31C44 0x6B00FFE6 0x6B00FFE0         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
+DF17811 0x33080 0x6B06FFE6 0x6B06FFE0         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
 
 # Coolscan LS-40
 PT17035 0x169F4 "1.20" "2.02"                 # Version in INQUIRY response
