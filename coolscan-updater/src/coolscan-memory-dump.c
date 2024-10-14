@@ -26,7 +26,7 @@ int main() {
     printf("...scanner says it's a %s\n", coolscan_command_inquiry(scanner));
 
     const size_t memory_dump_addr = 0xFFFFC0;
-    const size_t memory_dump_last = 0xFFFFDF;
+    const size_t memory_dump_last = 0xFFFFFF;
     const size_t memory_dump_size = memory_dump_last - memory_dump_addr + 1;
     struct coolscan_buffer memory_dump_buffer = {
         .length = memory_dump_size,
