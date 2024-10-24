@@ -127,6 +127,7 @@ or repairmen. It is of not much use to general public.
 This project has been made possible thanks to some great people:
 
 * [Gleb Shtengel](http://www.shtengel.com/gleb/index.htm) - provided knowledge, firmware dumps, USB dumps, and parts
+* [Kilian Dolan](https://github.com/arahowerya) - solved the six frame mystery ([issue #4](https://github.com/kosma/coolscan-mods/issues/4))
 * Victor Gerasimov - provided knowledge, ideas, and firmware dumps
 * Paulo Meireles - provided hardware, inspiration, and smiles
 * Graeme Hardie - provided wisdom on the value of shipping 32-bit executables
