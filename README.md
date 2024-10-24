@@ -4,13 +4,10 @@
 
 |           | **SA-30**  | **SF-200**  | **SF-210**  |
 |-----------|------------|-------------|-------------|
-| **LS-40** |     ⚠️\*   |      ✅     |      ✅     |
-| **LS-50** |     ⚠️\*   |      ✅     |      ✅     |
+| **LS-40** |     ⚠️\*    |      ✅     |      ✅     |
+| **LS-50** |     ✅     |      ✅     |      ✅     |
 
-\* The mod's author is successfully using an SA-30 on his LS-50 but other
-   people have reported problems (the scanner refuses to scan more than
-   six frames). You are welcome to flash the custom firmware and report
-   your success or failure.
+\* LS-40 support for SA-30 is pending - if you have such a scanner, let us know.
 
 ## Background
 
