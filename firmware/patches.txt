@@ -1,11 +1,11 @@
 # Coolscan LS-50
-DF17811 0x170EE "1.02" "2.02"                 # Version in INQUIRY response
-DF17811 0x17106 0x0201 0x0202                 # Version in USB descriptor (High Speed)
-DF17811 0x17118 0x0201 0x0202                 # Version in USB descriptor (Full Speed)
+DF17811 0x170EE "1.02" "2.03"                 # Version in INQUIRY response
+DF17811 0x17106 0x0201 0x0302                 # Version in USB descriptor (High Speed)
+DF17811 0x17118 0x0201 0x0302                 # Version in USB descriptor (Full Speed)
 DF17811 0x2A213 0x03 0x42                     # Enable adapter ID 3
 DF17811 0x2A219 0x05 0x42                     # Enable adapter ID 5
 DF17811 0x2A21F 0x06 0x42                     # Enable adapter ID 6
-DF17811 0x49E49 "1.02" "2.02"                 # Version in strings
+DF17811 0x49E49 "1.02" "2.03"                 # Version in strings
 DF17811 0x4A114 0x00400000 0x00000000         # READ BUFFER - allowed RAM start
 DF17811 0x4A118 0x0041FFFF 0x00FFFFFF         # READ BUFFER - allowed RAM end
 DF17811 0x2EFA2 0x6B01FFE6 0x6B01FFE0         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
@@ -13,11 +13,11 @@ DF17811 0x31C44 0x6B00FFE6 0x6B00FFE0         # Change MSW19 (Rear Photointerrup
 DF17811 0x33080 0x6B06FFE6 0x6B06FFE0         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
 
 # Coolscan LS-40
-PT17035 0x169F4 "1.20" "2.02"                 # Version in INQUIRY response
-PT17035 0x16A33 0x2001 0x0202                 # Version in USB descriptor (Full Speed)
+PT17035 0x169F4 "1.20" "2.03"                 # Version in INQUIRY response
+PT17035 0x16A33 0x2001 0x0302                 # Version in USB descriptor (Full Speed)
 PT17035 0x29EB3 0x03 0x42                     # Enable adapter ID 3
 PT17035 0x29EB9 0x05 0x42                     # Enable adapter ID 5
 PT17035 0x29EBF 0x06 0x42                     # Enable adapter ID 6
-PT17035 0x47C3B "1.20" "2.02"                 # Version in strings
+PT17035 0x47C3B "1.20" "2.03"                 # Version in strings
 PT17035 0x47F06 0x00400000 0x00000000         # READ BUFFER - allowed RAM start
 PT17035 0x47F0A 0x0041FFFF 0x00FFFFFF         # READ BUFFER - allowed RAM end
