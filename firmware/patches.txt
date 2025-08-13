@@ -21,3 +21,6 @@ PT17035 0x29EBF 0x06 0x42                     # Enable adapter ID 6
 PT17035 0x47C3B "1.20" "2.03"                 # Version in strings
 PT17035 0x47F06 0x00400000 0x00000000         # READ BUFFER - allowed RAM start
 PT17035 0x47F0A 0x0041FFFF 0x00FFFFFF         # READ BUFFER - allowed RAM end
+PT17035 0x2EAAC 0x6B01FFE6 0x6B01FFE0         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
+PT17035 0x31754 0x6B00FFE6 0x6B00FFE0         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
+PT17035 0x32A9C 0x6B06FFE6 0x6B06FFE0         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
