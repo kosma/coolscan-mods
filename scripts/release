@@ -1,0 +1,10 @@
+#!/bin/bash
+
+VERSION="$(git describe --tags)"
+
+FOLDER="coolscan-firmware-package-$VERSION"
+
+mkdir "$FOLDER"
+cp firmware/patched/*.bin "$FOLDER"/
+cp coolscan-updater/*.exe "$FOLDER"/
+zip -r "$FOLDER.zip" "$FOLDER"/
