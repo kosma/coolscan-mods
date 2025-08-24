@@ -4,10 +4,8 @@
 
 |           | **SA-30**  | **SF-200**  | **SF-210**  |
 |-----------|------------|-------------|-------------|
-| **LS-40** |     ⚠️\*    |      ✅     |      ✅     |
+| **LS-40** |     ✅     |      ✅     |      ✅     |
 | **LS-50** |     ✅     |      ✅     |      ✅     |
-
-\* LS-40 support for SA-30 is pending - if you have such a scanner, let us know.
 
 ## Background
 
