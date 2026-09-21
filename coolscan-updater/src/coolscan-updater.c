@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <unistd.h>
+
+#ifdef _WIN32
 #include <conio.h>
+#else
+#define _getch() getchar()
+#endif
 
 #include "coolscan_command.h"
 #include "coolscan_transport.h"

@@ -21,3 +21,24 @@ pacman -S mingw-w64-i686-gcc mingw-w64-i686-ninja
 
 Afterwards, select the MINGW32 toolchain in CLion settings (Toolchain and CMake
 sections).
+
+## Linux
+Requires libusb-1.0. Manual build:
+
+```
+gcc -O2 -Wall \
+        coolscan-updater.c \
+        coolscan_buffer.c \
+        coolscan_command.c \
+        coolscan_transport_libusb_linux.c \
+        coolscan_updatefile.c \
+        -o coolscan-updater \
+        -lusb-1.0
+```
+
+Or use CMake:
+
+```
+cmake -Bbuild -S. -DCMAKE_BUILD_TYPE=Release
+cmake --build build
+```
