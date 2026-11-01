@@ -27,3 +27,4 @@ PT17035 0x31754 0x6B00FFE6 0x6B00FFE0         # Change MSW19 (Rear Photointerrup
 PT17035 0x32A9C 0x6B06FFE6 0x6B06FFE0         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
 PT17035 0x26529 0x42 0x52                     # Set MULTIPLE_READING bit in inquiry page D1
 PT17035 0x28043 0xbd 0xad                     # Change mask to allow setting MULTIPLE_READING bit in window descriptor
+PT17035 0x10A6E 0x47 0x40                     # Enable reading perforation sensors with SA-30 during thumbnail scan
