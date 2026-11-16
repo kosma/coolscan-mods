@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 
 struct coolscan_buffer *coolscan_read_firmware_file(const char *model)

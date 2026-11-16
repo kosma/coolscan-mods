@@ -1,3 +1,5 @@
 *.bin.bak
 .DS_Store
 .*.swp
+build
+.vscode
