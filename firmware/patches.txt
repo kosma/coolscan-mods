@@ -12,7 +12,7 @@ DF17811 0x2EFA2 0x6B01FFE6 0x6B01FFE0                         # Change MSW19 (Re
 DF17811 0x31C44 0x6B00FFE6 0x6B00FFE0                         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
 DF17811 0x33080 0x6B06FFE6 0x6B06FFE0                         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
 DF17811 0x2A20C 0xA80147126868A842470C 0x6868A8044604F80568E8 # Rewrite adapter ID 4 (SA-21) to 5 (SA-30)
-
+DF17811 0x267c7 0x46 0x56                                     # Set MULTIPLE_READING bit in inquiry page D1
 
 # Coolscan LS-40
 PT17035 0x169F4 "1.20" "2.05"                                 # Version in INQUIRY response
@@ -28,3 +28,5 @@ PT17035 0x31754 0x6B00FFE6 0x6B00FFE0                         # Change MSW19 (Re
 PT17035 0x32A9C 0x6B06FFE6 0x6B06FFE0                         # Change MSW19 (Rear Photointerrupter) to read MSW5 (Centre Sprocket)
 PT17035 0x29EAC 0xA80147126868A842470C 0x6868A8044604F80568E8 # Rewrite adapter ID 4 (SA-21) to 5 (SA-30)
 PT17035 0x10A6E 0x47 0x40                                     # Enable ITU 4 for all IDs, not only for SA-21
+PT17035 0x26529 0x42 0x52                                     # Set MULTIPLE_READING bit in inquiry page D1
+PT17035 0x28043 0xbd 0xad                                     # Change mask to allow setting MULTIPLE_READING bit in window descriptor
