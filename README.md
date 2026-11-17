@@ -1,11 +1,20 @@
 # Nikon Coolscan modification project
 
-## Adapter compatibility chart
+## Feature chart
 
-|           | **SA-30**  | **SF-200**  | **SF-210**  |
-|-----------|------------|-------------|-------------|
-| **LS-40** |     ✅     |      ✅     |      ✅     |
-| **LS-50** |     ✅     |      ✅     |      ✅     |
+| **Feature**        | **LS-40**          | **LS-50**          | **LS-4000** | **LS-5000** |
+|--------------------|--------------------|--------------------|-------------|-------------|
+| **SA-21**          | ✅ works as SA-30* | ✅ works as SA-30* | ✔ works**   | ✔ works**   |
+| **SA-30**          | ✅ works           | ✅ works           | ✔ works     | ✔ works     |
+| **SF-200, SF-210** | ✅ works           | ✅ works           | ✔ works     | ✔ works     |
+| **Multisampling**  | ✅ works***        | ✅ works***        | ✔ works     | ✔ works     |
+
+✔ - feature supported by Nikon \
+✅ - feature added by this firmware
+
+\* Your SA-21 magically becomes an SA-30, no need to solder anything. \
+\** Firmware-based SA-30 upgrade coming soon. \
+\*** Not all software has been confirmed compatible, please report your success or failure.
 
 ## Background
 
