@@ -2,12 +2,13 @@
 
 ## Feature chart
 
-| **Feature**        | **LS-40**          | **LS-50**          | **LS-4000** | **LS-5000** |
-|--------------------|--------------------|--------------------|-------------|-------------|
-| **SA-21**          | ✅ works as SA-30* | ✅ works as SA-30* | ✔ works**   | ✔ works**   |
-| **SA-30**          | ✅ works           | ✅ works           | ✔ works     | ✔ works     |
-| **SF-200, SF-210** | ✅ works           | ✅ works           | ✔ works     | ✔ works     |
-| **Multisampling**  | ✅ works***        | ✅ works***        | ✔ works     | ✔ works     |
+| **Feature**          | **LS-40**          | **LS-50**          | **LS-4000** | **LS-5000** |
+|----------------------|--------------------|--------------------|-------------|-------------|
+| **SA-21**            | ✅ works as SA-30* | ✅ works as SA-30* | ✔ works**   | ✔ works**   |
+| **SA-30**            | ✅ works           | ✅ works           | ✔ works     | ✔ works     |
+| **SF-200, SF-210**   | ✅ works           | ✅ works           | ✔ works     | ✔ works     |
+| **Multisampling**    | ✅ works***        | ✅ works***        | ✔ works     | ✔ works     |
+| **Hole in the back** | 🪚 cut it yourself | 🪚 cut it yourself | ✔ exists    | ✔ exists    |
 
 ✔ - feature supported by Nikon \
 ✅ - feature added by this firmware
