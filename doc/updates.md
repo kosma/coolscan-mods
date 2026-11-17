@@ -11,15 +11,24 @@ For our purposes, I distinguish three firmware file formats:
    purposes - they let you pretty much undo anything weird you might have
    done to the firmware.
 
-2. The `FIRMDATA` files, as included in Nikon updaters. They use an unknown
-   compression/packing format that is an enormous pain in the ass to reverse
-   engineer.
+2. The `FIRMDATA` resources, as included in Nikon updaters. They use
+   a length header and a custom variant of LZSS (dictionary initialized
+   with 0 instead of spaces). They can be uncompressed with `pylzss`:
 
-3. The binary files used with Nikon service software. They seem to have
-   a simpler format - just the binary data, starting at 0x10000 or possibly
-   0x20000. There's a good chance that this is the format that the scanner
-   expects. We need to run an LS-40 USB traffic dump in order to confirm
-   this theory.
+   ```python
+   # pip install pylzss
+   uncompressed_size, = struct.unpack("<I", firmdata[:4])
+   uncompressed_data = lzss.decompress(firmdata[4:], 0)
+   ```
+
+   This format is useless in most cases, except if we ever wanted to
+   repackage the original Nikon flashers with our custom firmware.
+
+4. The binary files used with Nikon service software - just the binary data,
+   starting at 0x10000. This is the format that the scanner expects,
+   and the format we use for our custom flashers and patching tools.
+   Use `scripts/create_fwupdate_file.py` to convert a full flash dump
+   into this format.
 
 A good clue that your firmware update file is correct is a scanner model
 string (e.g. `DF17811`) located at offset 0x11.
